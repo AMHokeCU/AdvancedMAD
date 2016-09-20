@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DdL-gN-gtM">
+                                <rect key="frame" x="86" y="393" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRA-EO-Z4Q">
+                                <rect key="frame" x="276" y="392" width="51" height="31"/>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MWa-Ex-0hy">
+                                <rect key="frame" x="389" y="393" width="118" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Young Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCK-eO-hzg">
+                                <rect key="frame" x="106" y="67" width="93" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="uil-Vc-bvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MilesOld_2_600x800.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zcy-dw-Z0H">
+                                <rect key="frame" x="352" y="117" width="192" height="244"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MilesYoung_600x800.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-MD-BkL">
+                                <rect key="frame" x="56" y="117" width="192" height="244"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Old Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsR-Cv-Qxu">
+                                <rect key="frame" x="412" y="67" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Text Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-Zk-oHP">
+                                <rect key="frame" x="377" y="431" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-iJ-Zqq">
+                                <rect key="frame" x="88" y="431" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fC-VB-cqf">
+                                <rect key="frame" x="262" y="431" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jsb-MD-BkL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="3JA-z1-5BV"/>
+                            <constraint firstItem="DdL-gN-gtM" firstAttribute="top" secondItem="jsb-MD-BkL" secondAttribute="bottom" constant="35" id="7Ve-Cj-ixL"/>
+                            <constraint firstItem="iCK-eO-hzg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="8kI-1R-Roh"/>
+                            <constraint firstItem="DdL-gN-gtM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="Aaa-Va-iou"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DdL-gN-gtM" secondAttribute="bottom" constant="176" id="CAB-Fm-35z"/>
+                            <constraint firstItem="MWa-Ex-0hy" firstAttribute="top" secondItem="zcy-dw-Z0H" secondAttribute="bottom" constant="32" id="E6P-gC-Uhj"/>
+                            <constraint firstItem="jsb-MD-BkL" firstAttribute="bottom" secondItem="zcy-dw-Z0H" secondAttribute="bottom" id="EWm-P6-B9u"/>
+                            <constraint firstItem="Pqa-iJ-Zqq" firstAttribute="centerX" secondItem="DdL-gN-gtM" secondAttribute="centerX" id="EtV-AQ-pzW"/>
+                            <constraint firstItem="iCK-eO-hzg" firstAttribute="centerX" secondItem="jsb-MD-BkL" secondAttribute="centerX" id="J2r-wX-AQg"/>
+                            <constraint firstItem="5gw-Zk-oHP" firstAttribute="leading" secondItem="7fC-VB-cqf" secondAttribute="trailing" constant="27" id="K4p-hF-NuT"/>
+                            <constraint firstItem="iCK-eO-hzg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="Pn7-GN-PHt"/>
+                            <constraint firstItem="7fC-VB-cqf" firstAttribute="leading" secondItem="Pqa-iJ-Zqq" secondAttribute="trailing" constant="56" id="SbR-SC-Evu"/>
+                            <constraint firstItem="mRA-EO-Z4Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tt1-j4-51a"/>
+                            <constraint firstItem="mRA-EO-Z4Q" firstAttribute="centerY" secondItem="MWa-Ex-0hy" secondAttribute="centerY" id="UOf-Po-PAd"/>
+                            <constraint firstItem="nsR-Cv-Qxu" firstAttribute="baseline" secondItem="iCK-eO-hzg" secondAttribute="firstBaseline" id="V4T-jb-X8S"/>
+                            <constraint firstItem="jsb-MD-BkL" firstAttribute="top" secondItem="iCK-eO-hzg" secondAttribute="bottom" constant="29" id="Yl0-Xq-r54"/>
+                            <constraint firstItem="MWa-Ex-0hy" firstAttribute="leading" secondItem="mRA-EO-Z4Q" secondAttribute="trailing" constant="66" id="ZFA-dH-ZWD"/>
+                            <constraint firstItem="iCK-eO-hzg" firstAttribute="baseline" secondItem="nsR-Cv-Qxu" secondAttribute="baseline" id="du5-GN-M9A"/>
+                            <constraint firstItem="5gw-Zk-oHP" firstAttribute="centerX" secondItem="MWa-Ex-0hy" secondAttribute="centerX" id="fI0-FK-ben"/>
+                            <constraint firstItem="Pqa-iJ-Zqq" firstAttribute="baseline" secondItem="7fC-VB-cqf" secondAttribute="baseline" id="fLS-JC-DHh"/>
+                            <constraint firstItem="mRA-EO-Z4Q" firstAttribute="leading" secondItem="DdL-gN-gtM" secondAttribute="trailing" constant="67" id="lOg-w7-PoC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mRA-EO-Z4Q" secondAttribute="bottom" constant="177" id="mJX-bh-HdK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MWa-Ex-0hy" secondAttribute="trailing" constant="75" id="maZ-zD-ce8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zcy-dw-Z0H" secondAttribute="trailing" constant="36" id="nQz-eG-jLO"/>
+                            <constraint firstItem="zcy-dw-Z0H" firstAttribute="centerX" secondItem="MWa-Ex-0hy" secondAttribute="centerX" id="nV3-MV-78u"/>
+                            <constraint firstItem="jsb-MD-BkL" firstAttribute="top" secondItem="zcy-dw-Z0H" secondAttribute="top" id="oKq-Tl-n2h"/>
+                            <constraint firstItem="7fC-VB-cqf" firstAttribute="top" secondItem="mRA-EO-Z4Q" secondAttribute="bottom" constant="8" symbolic="YES" id="r2V-cu-OSt"/>
+                            <constraint firstItem="nsR-Cv-Qxu" firstAttribute="centerX" secondItem="zcy-dw-Z0H" secondAttribute="centerX" id="u0q-xz-mze"/>
+                            <constraint firstItem="7fC-VB-cqf" firstAttribute="baseline" secondItem="5gw-Zk-oHP" secondAttribute="baseline" id="yaX-yy-XI0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MilesOld_2_600x800.jpg" width="600" height="800"/>
+        <image name="MilesYoung_600x800.jpg" width="600" height="800"/>
+    </resources>
+</document>
