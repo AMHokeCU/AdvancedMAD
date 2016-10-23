@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TurtableClipArt.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqM-b0-USh">
+                                <rect key="frame" x="130" y="209" width="341" height="182"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HHU-yl-zEL" appends="YES" id="Tf8-PC-gCz"/>
+                                    <outletCollection property="gestureRecognizers" destination="9ef-nL-8ey" appends="YES" id="lzY-lh-kJi"/>
+                                    <outletCollection property="gestureRecognizers" destination="h8G-ta-dfS" appends="YES" id="HlJ-TQ-H5O"/>
+                                    <outletCollection property="gestureRecognizers" destination="EeJ-S6-oMX" appends="YES" id="U46-rd-Qgl"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HHU-yl-zEL">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="yOS-Xx-vRV"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="z1G-eT-tzT"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="9ef-nL-8ey">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="AKi-BY-VpY"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Ez5-5t-Zi4"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="h8G-ta-dfS">
+                    <connections>
+                        <action selector="handleRotation:" destination="BYZ-38-t0r" id="knm-oU-QUy"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Nww-vt-Loj"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="EeJ-S6-oMX">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="Th1-3F-6kH"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="nZB-mL-NhK"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TurtableClipArt.png" width="900" height="853"/>
+    </resources>
+</document>
